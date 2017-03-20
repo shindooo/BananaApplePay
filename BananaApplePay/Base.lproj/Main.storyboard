@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+<capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--View Controller-->
+<scene sceneID="tne-QT-ifu">
+<objects>
+<viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BananaapplePay" customModuleProvider="target" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+<viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="フィリピン産バナナ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwx-bX-6bE">
+<rect key="frame" x="16" y="40" width="343" height="40"/>
+<constraints>
+<constraint firstAttribute="height" constant="40" id="cSv-3P-5Xq"/>
+</constraints>
+<fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="30"/>
+<color key="textColor" red="1" green="0.11295572916666663" blue="0.1277398003472221" alpha="1" colorSpace="calibratedRGB"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="甘くて美味しいバナナ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pte-ym-mbS">
+<rect key="frame" x="16" y="458" width="319" height="23"/>
+<constraints>
+<constraint firstAttribute="height" constant="23" id="7yv-1I-SOT"/>
+<constraint firstAttribute="width" constant="319" id="IYO-Xi-u9m"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="22"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcT-Fs-gV0">
+<rect key="frame" x="168" y="508" width="0.0" height="23"/>
+<autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6J-Qc-GwP">
+<rect key="frame" x="315" y="489" width="20" height="24"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yE-yG-Ad9">
+<rect key="frame" x="287" y="520" width="23" height="23"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gD-VQ-fkD">
+<rect key="frame" x="316" y="520" width="20" height="23"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="CTY-Vi-ZV8">
+<rect key="frame" x="28" y="93" width="319" height="345"/>
+<constraints>
+<constraint firstAttribute="height" relation="lessThanOrEqual" constant="345" id="NDv-Ot-tAt"/>
+<constraint firstAttribute="width" relation="lessThanOrEqual" constant="319" id="iCD-5o-X1a"/>
+</constraints>
+</imageView>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9v-42-wSR">
+<rect key="frame" x="287" y="490" width="24" height="23"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="価格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAU-rH-ado">
+<rect key="frame" x="240" y="520" width="39" height="23"/>
+<fontDescription key="fontDescription" type="system" pointSize="19"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="3yE-yG-Ad9" firstAttribute="top" secondItem="D9v-42-wSR" secondAttribute="bottom" constant="7" id="1M3-Cg-geF"/>
+<constraint firstAttribute="trailingMargin" secondItem="Pte-ym-mbS" secondAttribute="trailing" constant="24" id="3C2-Tg-8Ar"/>
+<constraint firstItem="0gD-VQ-fkD" firstAttribute="leading" secondItem="3yE-yG-Ad9" secondAttribute="trailing" constant="6" id="4dZ-Ft-HKj"/>
+<constraint firstItem="0gD-VQ-fkD" firstAttribute="baseline" secondItem="3yE-yG-Ad9" secondAttribute="baseline" id="A14-DO-zYm"/>
+<constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="CTY-Vi-ZV8" secondAttribute="bottom" constant="12" id="B6I-ce-OKr"/>
+<constraint firstItem="3yE-yG-Ad9" firstAttribute="leading" secondItem="qAU-rH-ado" secondAttribute="trailing" constant="8" id="Ecf-ju-KPG"/>
+<constraint firstItem="0gD-VQ-fkD" firstAttribute="trailing" secondItem="Pte-ym-mbS" secondAttribute="trailing" constant="1" id="L4n-je-Gd2"/>
+<constraint firstItem="C6J-Qc-GwP" firstAttribute="trailing" secondItem="Pte-ym-mbS" secondAttribute="trailing" id="Q57-Ep-dRt"/>
+<constraint firstItem="fwx-bX-6bE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UPH-t1-4i8"/>
+<constraint firstAttribute="bottomMargin" secondItem="Pte-ym-mbS" secondAttribute="bottom" constant="186" id="ZMY-ra-9ma"/>
+<constraint firstItem="D9v-42-wSR" firstAttribute="top" secondItem="Pte-ym-mbS" secondAttribute="bottom" constant="9" id="anB-9N-ip0"/>
+<constraint firstItem="C6J-Qc-GwP" firstAttribute="baseline" secondItem="D9v-42-wSR" secondAttribute="baseline" id="ci7-3E-PUr"/>
+<constraint firstItem="fwx-bX-6bE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="f6B-eU-TRM"/>
+<constraint firstItem="C6J-Qc-GwP" firstAttribute="leading" secondItem="D9v-42-wSR" secondAttribute="trailing" constant="4" id="fDx-2l-g2u"/>
+<constraint firstItem="C6J-Qc-GwP" firstAttribute="top" secondItem="Pte-ym-mbS" secondAttribute="bottom" constant="8" symbolic="YES" id="ieo-Un-DQz"/>
+<constraint firstItem="CTY-Vi-ZV8" firstAttribute="top" secondItem="fwx-bX-6bE" secondAttribute="bottom" constant="13" id="o6K-zz-cYY"/>
+<constraint firstItem="qAU-rH-ado" firstAttribute="top" secondItem="D9v-42-wSR" secondAttribute="bottom" constant="7" id="tvu-wd-rgc"/>
+<constraint firstItem="fwx-bX-6bE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xIj-C5-Q8h"/>
+<constraint firstItem="CTY-Vi-ZV8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="zMl-fH-6xW"/>
+</constraints>
+<connections>
+<action selector="tapPaymentButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cU-AC-Vz3"/>
+</connections>
+</view>
+<connections>
+<outlet property="amountLabel" destination="3yE-yG-Ad9" id="I8S-bp-tCQ"/>
+<outlet property="itemImageView" destination="CTY-Vi-ZV8" id="hkh-FJ-HnI"/>
+<segue destination="hNh-mD-omW" kind="presentation" identifier="ThankYou" id="ZZh-9t-v2f"/>
+</connections>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+</scene>
+<!--View Controller-->
+<scene sceneID="75O-Ep-7Hz">
+<objects>
+<viewController id="hNh-mD-omW" sceneMemberID="viewController">
+<layoutGuides>
+<viewControllerLayoutGuide type="top" id="IkR-f6-JLp"/>
+<viewControllerLayoutGuide type="bottom" id="uMM-ac-0Ye"/>
+</layoutGuides>
+<view key="view" contentMode="scaleToFill" id="vBc-NU-y7l">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SUV-WN-nBj">
+<rect key="frame" x="24.5" y="299" width="326.5" height="70"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お買上げありがとうございました。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uir-QM-W3I">
+<rect key="frame" x="0.0" y="0.0" width="326.5" height="24"/>
+<fontDescription key="fontDescription" type="system" pointSize="20"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xl-Bj-uoV">
+<rect key="frame" x="143" y="34" width="41" height="36"/>
+<fontDescription key="fontDescription" type="system" pointSize="20"/>
+<state key="normal" title="戻る"/>
+<connections>
+<segue destination="yDk-a9-g7G" kind="unwind" unwindAction="backFromThanYouWithSegue:" id="Rbu-ef-IdL"/>
+</connections>
+</button>
+</subviews>
+</stackView>
+</subviews>
+<color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+<constraints>
+<constraint firstItem="SUV-WN-nBj" firstAttribute="centerX" secondItem="vBc-NU-y7l" secondAttribute="centerX" id="4NZ-uC-tXK"/>
+<constraint firstItem="SUV-WN-nBj" firstAttribute="centerY" secondItem="vBc-NU-y7l" secondAttribute="centerY" id="OWr-KX-9Qw"/>
+</constraints>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="Ggx-0M-Tk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+<exit id="yDk-a9-g7G" userLabel="Exit" sceneMemberID="exit"/>
+</objects>
+<point key="canvasLocation" x="832.79999999999995" y="138.98050974512745"/>
+</scene>
+</scenes>
+<resources>
+<image name="banana" width="1400" height="1512"/>
+</resources>
+</document>
