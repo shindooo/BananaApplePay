@@ -18,7 +18,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     // Apple Payボタン
     private lazy var paymentButton: PKPaymentButton = self.createPaymentButton()
     
-    private var didPaymentSucceeded = false
+    private var didPaymentSucceed = false
     
     // サポートするカードの種類
     private var paymentNetworksToSupport: [PKPaymentNetwork] {
@@ -64,9 +64,9 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     
     // Apple Payボタンタップ
     func tapPaymentButton() {
-        let merchantIdentifier = "Appleのサイトで取得したマーチャントID"
+        let merchantIdentifier = "Appleのサイトで登録したマーチャントID"
         
-        didPaymentSucceeded = false
+        didPaymentSucceed = false
         
         // 決済の要求を作成
         let paymentRequest = PKPaymentRequest()
@@ -114,7 +114,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     
     // ユーザーが支払いを承認した（Touch IDまたはパスコードの入力）ときに呼ばれるデリゲートメソッド
     func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, completion: @escaping (PKPaymentAuthorizationStatus) -> Void) {
-        
+
         // 受け取ったトークンを使って決済プラットフォームと連携し、決済処理を行う
         // 原則として決済プラットフォームが提供するSDKを用いる
         // ここでは参考までにPAY.JPを利用する場合の処理を記述する
@@ -148,7 +148,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
                     
                     if 200...299 ~= httpResponse.statusCode {
                         // 決済処理が正常に完了
-                        self.didPaymentSucceeded = true
+                        self.didPaymentSucceed = true
                         completion(.success)
                         
                     } else {
@@ -174,7 +174,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
         // ペイメントシートを閉じる
         controller.dismiss(animated: true,completion: nil)
         
-        if didPaymentSucceeded {
+        if didPaymentSucceed {
             performSegue(withIdentifier:"ThankYou", sender: self)
         }
     }
