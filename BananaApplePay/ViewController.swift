@@ -117,6 +117,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
 
         // 受け取ったトークンを使って決済プラットフォームと連携し、決済処理を行う
         // 原則として決済プラットフォームが提供するSDKを用いる
+        // 実際の決済はバックエンド側で決済プラットフォームと連携する
         // ここでは参考までにPAY.JPを利用する場合の処理を記述する
         // ↓↓↓
         let PAYJPPublicKey = "PAY.JPの設定画面で確認した公開鍵"
@@ -128,7 +129,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
             case .success(let token):
                 // PAY.JPのトークン作成成功
                 
-                // 決済処理はバックエンド側で行う
+                // アプリのバックエンドと通信する
                 var request = URLRequest(url: URL(string: "https://paymentBackEnd.Example.com/bananaapplepay/api/orders/")!)
                 
                 request.httpMethod = "POST"
