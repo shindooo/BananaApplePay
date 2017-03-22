@@ -63,7 +63,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
     }
     
     // Apple Payボタンタップ
-    func tapPaymentButton() {
+    func paymentBUttonTapped() {
         let merchantIdentifier = "Appleのサイトで登録したマーチャントID"
         
         didPaymentSucceed = false
@@ -189,7 +189,7 @@ class ViewController: UIViewController, PKPaymentAuthorizationViewControllerDele
         // (Auto Layoutのため)
         button.translatesAutoresizingMaskIntoConstraints = false
         // アクション設定
-        button.addTarget(self, action: #selector(ViewController.tapPaymentButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(ViewController.paymentBUttonTapped), for: .touchUpInside)
         
         return button
     }
